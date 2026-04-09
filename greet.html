@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to Government College Of Technology</h2><br><br>
+    <!-- <button onclick="greet()">Login</button> -->
+    <p id="msg"></p>
+    <script>
+        let time = new Date();
+        function greet(){
+                document.getElementById("msg").innerText= new Date();
+        }
+        setInterval(greet,1000);
+    </script>
+</body>
+</html>

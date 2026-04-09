@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GST Calculator</title>
+</head>
+<body>
+
+    <h2>GST Bill Calculator</h2>
+
+    Enter Amount: 
+    <input type="number" id="amount"><br><br>
+
+    Enter GST %: 
+    <input type="number" id="gst"><br><br>
+
+    <button onclick="calculateBill()">Calculate</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function calculateBill() {
+            let amount = document.getElementById("amount").value;
+            let gst = document.getElementById("gst").value;
+
+            let gstAmount = (amount * gst) / 100;
+            let total = parseInt(amount) + gstAmount;
+
+            document.getElementById("result").innerText = total
+                "GST Amount = " + gstAmount + "<br>Total Bill = " + total;
+        }
+    </script>
+
+</body>
+</html>

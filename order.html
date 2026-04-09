@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Food App</h1>
+
+Burger (100):
+<input type="number" id="p" value="0" onchange="total()"><br><br>
+
+Pizza (200):
+<input type="number" id="b" value="0" onchange="total()"><br><br>
+
+Total: <span id="t">0</span>
+
+<script>
+function total(){
+    let a = document.getElementById("p").value;
+    let b = document.getElementById("b").value;
+
+    let sum = (a * 100) + (b * 200);
+
+    document.getElementById("t").innerText=sum;
+}
+</script>
+
+</body>
+</html>
