@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="login">
+    <h1>welcome login to continue</h1>
+    <form onsubmit="return validatelogin()"  method="post" action="login.php">
+    Name: <input id="name" name="name" type ="text" placeholder="username"><br><br>
+    password:<input id="pass" name="pass" type="password" placeholder="password"><br><br>
+    <button type="submit">Login</button><br><br>
+    <a href="register.html">New User?Register Here</a>
+</form>
+</div>
+
+</body>
+</html>

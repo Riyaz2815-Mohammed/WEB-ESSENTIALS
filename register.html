@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="register">
+    <h1>Register</h1> 
+    <form onsubmit="return validate()" method="post" action="register.php">
+    Name:   <input id="name" name="name" type="text" placeholder="Name">
+    <br><br>
+    Age: <input id="age" name="age" type="number" placeholder="age">
+<br><br>
+    DOB:    <input  id="dob" name="dob" type ="text" placeholder="dd-mm-yyyy"><br><br>
+    Email: <input id="email" name="email" type="text" placeholder=".....@gmail.com"><br><br>
+    Password:   <input id="pass" name="pass" type="password" placeholder="password"><br><br>
+    <button type="submit">Register</button>
+    </form>
+    </div>  
+</body>
+</html>
